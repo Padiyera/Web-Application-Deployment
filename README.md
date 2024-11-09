@@ -5,7 +5,7 @@
 
 Actividad | Descripción
 ----------|------------
-[Actividad1](/Actividad2) | Act.1_Proyecto 
+[Actividad1](/proyecto/Actividad1.md) | Act.1_Proyecto 
 [Actividad2](/proyecto/Actividad2.md) | Act.2_Proyecto 
 
 
@@ -13,5 +13,5 @@ Actividad | Descripción
 
 Actividad | Descripción
 ----------|------------
-[Actividad2](/tema1/Actividad2.md) | Trabajando con scripts
+[Actividad2](/Actividad2) | Trabajando con scripts
 
