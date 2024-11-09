@@ -5,8 +5,8 @@
 
 Actividad | Descripción
 ----------|------------
-[Actividad1](/proyecto/Actividad1.md) | Act.1_Proyecto 
-[Actividad2](/proyecto/Actividad2.md) | Act.2_Proyecto 
+[1_Trimestre](/proyecto/myProyect) | Proyecto 1
+[2_Trimestre](/proyecto/myProyect2) | Proyecto 2
 
 
 ## TEMA 1 - Servidores Web
