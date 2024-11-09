@@ -13,5 +13,5 @@ Actividad | Descripción
 
 Actividad | Descripción
 ----------|------------
-[Actividad2](T.1_ServidoresWeb/Actividad2) | Trabajando con scripts
+[Actividad2](/T.1_ServidoresWeb/Act_2.TrabajandoConScripts) | Trabajando con scripts
 
