@@ -5,7 +5,7 @@
 
 Actividad | Descripción
 ----------|------------
-[Actividad1](/proyecto/Actividad1.md) | Act.1_Proyecto 
+[Actividad1](/Actividad2) | Act.1_Proyecto 
 [Actividad2](/proyecto/Actividad2.md) | Act.2_Proyecto 
 
 
