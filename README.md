@@ -5,8 +5,8 @@
 
 Actividad | Descripción
 ----------|------------
-[1_Trimestre](/Tr.1_Proyecto/myProyect) | Proyecto 1
-[2_Trimestre](/Tr.2_Proyecto/myProyect2) | Proyecto 2
+[1_Trimestre](/Tr.1_Proyecto/Myproyect) | Proyecto 1
+[2_Trimestre](/Tr.2_Proyecto/Myproyect2) | Proyecto 2
 
 
 ## TEMA 1 - Servidores Web
