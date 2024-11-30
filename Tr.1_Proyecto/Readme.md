@@ -139,7 +139,8 @@ sudo systemctl restart apache2
 
 ```
 Y ahora solo queda acceder a la carpeta por el navegador 
-<img src="imagenes/conf.png" alt="Texto Alternativo"><img src="imgenes/python.png" alt="Texto Alternativo">
+<img src="imagenes/conf.png" alt="Texto Alternativo">
+<img src="imgenes/python.png" alt="Texto Alternativo">
 
 # 5. Protección mediante autenticación
 
