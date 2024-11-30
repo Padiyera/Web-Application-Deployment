@@ -7,7 +7,7 @@
 
 | 📝 Actividad                          | 📄 Descripción |
 |---------------------------------------|----------------|
-| [1º Trimestre](./Tr.1_Proyecto/Myproyect) | Proyecto 1    |
+| [1º Trimestre](./Tr.1_Proyecto/Readme.md) | Proyecto 1    |
 | [2º Trimestre](./Tr.2_Proyecto/Myproyect2) | Proyecto 2    |
 
 ---
