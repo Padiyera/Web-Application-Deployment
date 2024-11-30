@@ -56,6 +56,7 @@ sudo chmod -R 755 /var/www/html/wordpress
 ```
 
 <img src="imagenes/Im4.png" alt="Texto Alternativo">
+<img src="imagenes/Im5.png" alt="Texto Alternativo">
 
 Una vez hecho esto, creamos la base de datos y un usuario mediante MySQL y el comando mysql -u root -p
 
@@ -104,7 +105,7 @@ echo "def application(environ, start_response):
     return [output]" | sudo tee /var/www/departamentos/app.py
 
 ```
-<img src="imagenes/Im6.png" alt="Texto Alternativo">
+<img src="imagenes/Im7.png" alt="Texto Alternativo">
 
 Configuramos /etc/apache2/sites-available/departamentos.centro.intranet.conf tal que asi:
 
