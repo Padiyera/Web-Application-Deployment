@@ -1,4 +1,4 @@
-# 1. Configuración inicial de la instancia AWS
+# 1. Configuración necesaria de AWS
 
 ## Enciendo el laboratorio de AWS
 <img src="imagenes/Im1.png" alt="Texto Alternativo">
