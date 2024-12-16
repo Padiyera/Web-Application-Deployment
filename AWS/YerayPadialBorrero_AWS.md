@@ -100,7 +100,7 @@ Esto generará dos archivos:
 Habilitar el archivo de configuración para SSL:
 <img src="imagenes/Im22.PNG" alt="Texto Alternativo">
 
-Edita el archivo de configuración del sitio SSL:
+Editamos el archivo de configuración del sitio SSL:<br>
 <img src="imagenes/Im23.PNG" alt="Texto Alternativo">
 Cerramos apache y es necesarios guardar para terminar.
  
