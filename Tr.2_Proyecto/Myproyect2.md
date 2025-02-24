@@ -22,7 +22,7 @@ Para la implementación, configuraremos:
 
 
 
----  
-<img src="imagenes/Im2.png" alt="Texto Alternativo">
+---  Ruta imagenes
+<img src="Images/a1.png" alt="Texto Alternativo">
 
 
