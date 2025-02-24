@@ -20,9 +20,30 @@ Para la implementación, configuraremos:
 
 ## Creación de las Subredes  
 
+Para crear dos subredes públicas y dos privadas, primero de todo en servicios, nos dirigimos a VPC.
+Aqui creamos una VPC con estas subredes.
 
-
----  Ruta imagenes
 <img src="Images/a1.png" alt="Texto Alternativo">
+
+Una vez clickado accedemos a VPC
+<img src="Images/a2.png" alt="Texto Alternativo">
+<img src="Images/a3.png" alt="Texto Alternativo">
+Procedemos con la creación de estos VPC, le damos a crear y tendremos que tener encuenta los siguientes parametros:
+Nombre del VPC: wordpress-vpc.(Por ejemplo).
+Bloque CIDR IPv4: 10.0.0.0/16(Por ejemplo).
+Bloque CIDR IPv6: no lo necesitamos.
+Por tanto quedaría asi:
+<img src="Images/a4.png" alt="Texto Alternativo">
+
+Posteriomente a configurar nuestro VPC, creamos sus subredes.En primer lugar las públicas
+<img src="Images/a5.png" alt="Texto Alternativo">
+Al clickar, le damos a crear subred.
+<img src="Images/a6.png" alt="Texto Alternativo">
+Posteriormente configurarla, tal que así:
+Nombre de la subred: subred-publica-1.
+VPC:Selecciona wordpress-vpc.
+Zona de disponibilidad (AZ): Selecciona una AZ, por ejemplo, us-east-1a.
+Bloque CIDR IPv4: 10.0.1.0/24.
+<img src="Images/a7.png" alt="Texto Alternativo">
 
 
