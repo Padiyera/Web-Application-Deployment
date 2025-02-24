@@ -188,56 +188,68 @@ Para las subredes privadas, seguimos el mismo proceso, pero con los siguientes c
 
 ![x](Images/e4.png) 
 
+** Montar el EFS en la instancia: sudo mount -t nfs4 -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2,noresvport fs-0c78c0d35e7e930af.efs.us-east-1.amazonaws.com:/ /mnt/efs ** 
+
 ![x](Images/e5.png) 
+
+###  5.Acercandonos a tener Wordpress.
+
+** descargamos he instalamos wordpress
+cd /var/www/html
+sudo wget http://wordpress.org/latest.tar.gz
+sudo tar -xzf latest.tar.gz ** 
 
 ![x](Images/e6.png) 
 
-
-![x](Images/e7.png) 
-
-![x](Images/e8.png) 
-
-![x](Images/e9.png) 
-
-Montar el EFS en la instancia: sudo mount -t nfs4 -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2,noresvport fs-0c78c0d35e7e930af.efs.us-east-1.amazonaws.com:/ /mnt/efs
-![x](Images/f1.png) 
-
-descargamos he instalamos wordpress
-cd /var/www/html
-sudo wget http://wordpress.org/latest.tar.gz
-sudo tar -xzf latest.tar.gz
-![x](Images/f2.png) 
-configuramos la base de datos para worpress: sudo nano wp-config.php
+** configuramos la base de datos para worpress: sudo nano wp-config.php
 define( 'DB_NAME', 'nombre_de_la_base_de_datos' );
 define( 'DB_USER', 'nombre_de_usuario' );
 define( 'DB_PASSWORD', 'contraseña_del_usuario' );
 define( 'DB_HOST', 'localhost' );
-Reemplaza los valores entre comillas con la información correcta de tu base de datos RDS:
+Reemplaza los valores entre comillas con la información correcta de tu base de datos RDS:** 
 
-DB_NAME: El nombre de tu base de datos en RDS
+**DB_NAME: El nombre de tu base de datos en RDS**
 
-DB_USER: El nombre de usuario de la base de datos
+**DB_USER: El nombre de usuario de la base de datos**
 
-DB_PASSWORD: La contraseña de la base de datos
+**DB_PASSWORD: La contraseña de la base de datos**
 
-DB_HOST: El punto de enlace de tu instancia RDS
-Nos conectamos a la instancia de la base de datos.
+**DB_HOST: El punto de enlace de tu instancia RDS**
+
+**Nos conectamos a la instancia de la base de datos.**
+
+![x](Images/e7.png) 
+
+### 8.Creamos la base de datos, el usuario y la contraseña. 
+
+** CREATE DATABASE wordpress; ** 
+
+![x](Images/e8.png) 
+
+** CREATE USER 'wordpress_user'@'%' IDENTIFIED BY 'password123';  ** 
+
+![x](Images/e9.png) 
+
+** GRANT ALL PRIVILEGES ON wordpress.* TO 'wordpress_user'@'%';  ** 
+
+![x](Images/f1.png) 
+
+** FLUSH PRIVILEGES; ** 
+
+![x](Images/f2.png) 
+
+** Terminando ya, lanzamos la instalación simplemente llamando al servidor web en el navegador:http://44.192.41.132/wordpress ** 
+
+** Con los datos que anteriormente registramos sobre Wordpress rellenamos seguimos el asistente hasta completar la instalación de Wordpress. ** 
+
 ![x](Images/f3.png) 
-Creamos Base de datos, usuario y contraseña:
-CREATE DATABASE wordpress; 
-CREATE USER 'wordpress_user'@'%' IDENTIFIED BY 'password123'; 
-GRANT ALL PRIVILEGES ON wordpress.* TO 'wordpress_user'@'%'; 
-FLUSH PRIVILEGES;
+
+**Importante. Creamos el archivo wp-config.php y pegamos el codigo que wordpres proporciona.**
+
 ![x](Images/f4.png) 
 
-Lanzamos la instalación simplemente llamando al servidor web en el navegador:http://44.192.41.132/wordpress
 ![x](Images/f5.png) 
-Proporcionamos los datos que nos pide acerca de la base de datos y seguimos el asistente hasta completar la instalación de wordpress.
+** Tras esto, finalizamos la instalación. **
+
+** Posteriormente de iniciar sesión en Wordpress, confirmamos que la instalación completa ha sido exitosa. **
 ![x](Images/f6.png) 
-creamos el archivo wp-config.php y pegamos lo que wordpres nos proporciona
-![x](Images/f4.png) 
-![x](Images/a4.png) 
-terminamos la instalacion
-![x](Images/a4.png) 
-y tras iniciar sesion 
-![x](Images/a4.png) 
