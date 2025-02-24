@@ -176,7 +176,7 @@ Para las subredes privadas, seguimos el mismo proceso, pero con los siguientes c
 
 ###  7.Servicio EFS.
 
-**Buscamos el servicio EFS **
+**Buscamos el servicio EFS**
 
 ![x](Images/e2.png) 
 
