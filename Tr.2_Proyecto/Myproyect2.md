@@ -18,32 +18,50 @@ Para la implementación, configuraremos:
 
 2. **Balanceador de Carga**: Mejorará la distribución de tráfico y la disponibilidad del servicio.  
 
-## Creación de las Subredes  
+### 1️⃣ Creación de la VPC  
 
-Para crear dos subredes públicas y dos privadas, primero de todo en servicios, nos dirigimos a VPC.
-Aqui creamos una VPC con estas subredes.
+Para comenzar, nos dirigimos a **Servicios → VPC** y creamos una nueva **VPC** con las siguientes configuraciones:  
 
-<img src="Images/a1.png" alt="Texto Alternativo">
+📌 **Configuración de la VPC**  
+- **Nombre del VPC**: `wordpress-vpc` (Ejemplo)  
+- **Bloque CIDR IPv4**: `10.0.0.0/16`  
+- **Bloque CIDR IPv6**: *No es necesario*  
 
-Una vez clickado accedemos a VPC
-<img src="Images/a2.png" alt="Texto Alternativo">
-<img src="Images/a3.png" alt="Texto Alternativo">
-Procedemos con la creación de estos VPC, le damos a crear y tendremos que tener encuenta los siguientes parametros:
-Nombre del VPC: wordpress-vpc.(Por ejemplo).
-Bloque CIDR IPv4: 10.0.0.0/16(Por ejemplo).
-Bloque CIDR IPv6: no lo necesitamos.
-Por tanto quedaría asi:
-<img src="Images/a4.png" alt="Texto Alternativo">
+📸 **Capturas de Pantalla**  
+![Creación de la VPC](Images/a1.png)  
+![Acceso a VPC](Images/a2.png)  
+![Parámetros de VPC](Images/a3.png)  
+![Configuración final](Images/a4.png)  
 
-Posteriomente a configurar nuestro VPC, creamos sus subredes.En primer lugar las públicas
-<img src="Images/a5.png" alt="Texto Alternativo">
-Al clickar, le damos a crear subred.
-<img src="Images/a6.png" alt="Texto Alternativo">
-Posteriormente configurarla, tal que así:
-Nombre de la subred: subred-publica-1.
-VPC:Selecciona wordpress-vpc.
-Zona de disponibilidad (AZ): Selecciona una AZ, por ejemplo, us-east-1a.
-Bloque CIDR IPv4: 10.0.1.0/24.
-<img src="Images/a7.png" alt="Texto Alternativo">
+---
 
+### 2️⃣ Creación de las Subredes  
 
+#### 🔹 Subredes Públicas  
+
+1. Ir a **VPC → Subredes**  
+2. Hacer clic en **Crear subred**  
+3. Configurar los siguientes parámetros:  
+
+📌 **Configuración de la Subred Pública**  
+- **Nombre de la subred**: `subred-publica-1`  
+- **VPC**: `wordpress-vpc`  
+- **Zona de disponibilidad (AZ)**: `us-east-1a` (Ejemplo)  
+- **Bloque CIDR IPv4**: `10.0.1.0/24`  
+
+📸 **Capturas de Pantalla**  
+![Acceso a subredes](Images/a5.png)  
+![Crear subred](Images/a6.png)  
+![Configuración de la subred pública](Images/a7.png) 
+![Configuración de la subred pública](Images/a81.png) 
+![Configuración de la subred pública](Images/a82.png) 
+
+#### 🔹 Subredes Privadas  
+
+Para las subredes privadas, seguimos el mismo proceso, pero con los siguientes cambios:  
+
+📌 **Configuración de la Subred Privada**  
+- **Nombre de la subred**: `subred-privada-1`  
+- **Bloque CIDR IPv4**: `10.0.2.0/24`  
+
+📌 **Nota**: Se repite el proceso para crear una segunda subred pública y otra privada.  
