@@ -8,8 +8,8 @@
 | 📝 Actividad                          | 📄 Descripción |
 |---------------------------------------|----------------|
 | [1º Trimestre](./Tr.1_Proyecto/Readme.md) | Proyecto 1    |
-| [2º Trimestre](./Tr.2_Proyecto/Myproyect2.md) | Proyecto 2    |
-
+| [2º Trimestre](./Tr.2_Proyecto/Myproyect2.md) | Proyecto 2 AWS   |
+| [2º Trimestre](./Tr.2_Docker/dockerYera2.md) | Docker   |
 ---
 
 ## 📚 TEMA 1 - Servidores Web
